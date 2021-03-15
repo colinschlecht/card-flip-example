@@ -32,11 +32,9 @@ h1{
     position: absolute;
     transition: transform 1s;
     transform-style: preserve-3d;
-    
 }
 
-.card div {
-    display: flex;
+.card div { 
     height: 100%;
     width: 100%;
     position: absolute;
@@ -58,5 +56,8 @@ h1{
     transform: rotateY( 180deg );
 }
 
+/* .card:hover{
+    transform: rotateY( 180deg );
+}
 
-  
+   */
