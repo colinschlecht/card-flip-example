@@ -1,0 +1,62 @@
+/* general layout stuff */
+.page-content{
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+h1{
+    margin: 20 px;
+}
+
+.main-outer-container{
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+/*card frame*/
+.card_container {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+
+.card {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    
+}
+
+.card div {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card .front {
+    background-color: burlywood; 
+}
+
+/*flipping*/
+
+.card .back {
+    background: rgba(104, 104, 109);
+    transform: rotateY( 180deg );
+}
+
+.card.flipped {
+    transform: rotateY( 180deg );
+}
+
+
+  
